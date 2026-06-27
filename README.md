@@ -1,16 +1,16 @@
-# SFVNet: A Physics-Guided Spatial-Frequency Two-Stage Network for Video Snow Removal
+# PSFVNet: A Physics-Guided Spatial-Frequency Two-Stage Network for Video Snow Removal
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-This repository provides the official PyTorch implementation for the paper: **"SFVNet: A Physics-Guided Spatial-Frequency Two-Stage Network for Video Snow Removal"**.
+This repository provides the official PyTorch implementation for the paper: **"PSFVNet: A Physics-Guided Spatial-Frequency Two-Stage Network for Video Snow Removal"**.
 
 ---
 
 ## 🌟 Introduction
-`SFVNet` introduces a novel **two-stage collaborative paradigm** that integrates physical imaging priors with deep learning components in both spatial and frequency domains. 
+`PSFVNet` introduces a novel **two-stage collaborative paradigm** that integrates physical imaging priors with deep learning components in both spatial and frequency domains. 
 
-Instead of treating frames in isolation, `SFVNet` utilizes a **sliding-window mechanism** (default: 5 frames) to continuously process spatiotemporal contexts, effectively distinguishing high-speed drifting snow flakes from static backgrounds.
+Instead of treating frames in isolation, `PSFVNet` utilizes a **sliding-window mechanism** (default: 5 frames) to continuously process spatiotemporal contexts, effectively distinguishing high-speed drifting snow flakes from static backgrounds.
 
 ```
 ---
@@ -69,7 +69,7 @@ You can evaluate the models using the following testing protocols depending on t
 Bash
 
 ```
-python test_kitti.py --data_root ./data/kitti_snow --weights ./checkpoints/sfvnet_kitti_best.pth
+python test_kitti.py --data_root ./data/kitti_snow --weights ./checkpoints/psfvnet_kitti_best.pth
 ```
 
 ### 2. Evaluate on RVSD Evaluation Benchmarks
@@ -79,7 +79,7 @@ To run inference on raw video frames without center or random cropping, execute 
 Bash
 
 ```
-python test_rvsd.py --data_root ./data/rvsd_snow --weights ./checkpoints/sfvnet_rvsd_best.pth
+python test_rvsd.py --data_root ./data/rvsd_snow --weights ./checkpoints/psfvnet_rvsd_best.pth
 ```
 
 ## 📥 数据集下载链接 (Download Links)
